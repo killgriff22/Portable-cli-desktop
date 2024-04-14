@@ -1,3 +1,5 @@
 import MultiTerm
 display_size = MultiTerm.os.get_terminal_size()
-print(display_size)
+screen = MultiTerm.canvas(display_size)
+screen.clear()
+cluster = MultiTerm.cluster([screen])
